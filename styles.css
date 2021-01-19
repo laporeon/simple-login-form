@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364) no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background: #fff;
+    width: 350px;
+    min-height: 50vh;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.container h2 {
+    margin-bottom: 2.5rem;
+    font-size: 2.4rem;
+    position: relative;
+}
+
+.container h2::before {
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 3px;
+    bottom: 0;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form input[type="text"], form input[type="password"] {
+    border: 0;
+    padding: .5rem;
+    outline: none;
+    border-bottom: 1px solid rgba(0,0,0,.5);
+}
+
+form input[type="text"]:focus, form input[type="password"]:focus {
+   border-bottom: 2px solid #0f2027;
+}
+
+form input:first-child {
+    margin-bottom: .8rem;
+}
+
+form input[type="password"] {
+    margin-bottom: .9rem;
+}
+
+form input[type="submit"] {
+    color: #fff;
+    border: 0;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    border-radius: 3px;
+    padding: .5rem;
+    margin-top: 1rem;
+}
+
+form input[type="submit"]:hover {
+    letter-spacing: .1rem;
+    background: linear-gradient(to left, #0f2027, #203a43, #2c5364);
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+footer span {
+    font-size: 1.4rem; 
+    color: rgba(0,0,0,.5);
+    text-align: center;
+    margin: 1rem;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-media a {
+    margin: .5rem 0;
+    padding: .8rem;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+}
+
+.social-media a:first-child {
+    background: linear-gradient(to left, #1e3c72, #2a5298);
+    font-size: 1.3rem;
+}
+
+.social-media a:last-child {
+    background: linear-gradient(to left, #56a7f2, #468aca);
+    font-size: 1.3rem;
+}
+
+.social-media a i {
+    margin: 0 1rem;
+}
+
+.social-media a:hover {
+    letter-spacing: .1rem;
+}
+
